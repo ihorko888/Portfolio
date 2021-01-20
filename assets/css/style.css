@@ -4,6 +4,11 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+body.no-scroll,
+body.show-nav {
+    overflow: hidden;
+}
+
 *,
 *:before,
 *:after {
@@ -55,6 +60,7 @@ h6 {
 }
 
 .header__inner {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,9 +84,130 @@ h6 {
     font-size: 20px;
     text-transform: uppercase;
     color: #fff;
-    font-weight: 600;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.nav__link:hover {
+    color: #cccccc;
 }
 
 .nav__link + .nav__link {
     margin-left: 50px;
+}
+
+.nav-transform {
+    display: flex;
+    padding: 100px 0 0 0px;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    overflow: auto;
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+}
+
+.nav-transform.show {
+    display: flex;
+    transform: translateX(60%);
+    transition: transform .2s ease-out;
+}
+
+.nav__link-transform {
+    padding: 15px 0 15px 40px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: .3s all;
+}
+
+.nav__link-transform:hover {
+    background-color: #3bb78f;
+    color: #cccccc;
+}
+
+.nav__social {
+    padding-top: 60px;
+    padding-left: 35px;
+}
+
+.nav__icon {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    transition: .3s;
+}
+
+.nav__icon:hover {
+    fill: #cccccc;
+}
+
+.nav__social-block + .nav__social-block {
+    margin-left: 15px;
+}
+
+.burger {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 23px;
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 0;
+    color: #000;
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
+}
+
+.burger .burger__line:nth-child(2) {
+    width: 30px;
+    margin-left: auto;
+}
+
+.burger .burger__line:nth-child(3) {
+    width: 20px;
+    margin-left: auto;
+}
+
+.burger:hover .burger__line {
+    background-color: #cccccc;
+}
+
+.burger:hover .burger__line:nth-child(2),
+  .burger:hover .burger__line:nth-child(3) {
+    width: 40px;
+}
+
+.burger__line {
+    display: block;
+    width: 40px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-color: #fff;
+}
+
+.burger.active .burger__line:nth-child(1) {
+    width: 40px;
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.burger.active .burger__line:nth-child(2) {
+    width: 40px;
+    opacity: 0;
+}
+
+.burger.active .burger__line:nth-child(3) {
+    width: 40px;
+    transform: rotate(-45deg) translate(5px, -6px);
 }
