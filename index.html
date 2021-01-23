@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
-    <script src="assets/js/circle-progress.js"></script>
-    <title></title></head>
+    <script src="assets/js/circle-progress.min.js"></script>
+    <title>Portfolio</title></head>
 <body>
     
     <svg style="display: none;">
@@ -40,17 +40,48 @@
             </g>
         </symbol>
     
+        <symbol id="loupe" viewbox="0 0 512 512">
+            <g>
+                <path d="M310,190c-5.52,0-10,4.48-10,10s4.48,10,10,10c5.52,0,10-4.48,10-10S315.52,190,310,190z" fill="#ffffff" data-original="#000000" style=""/>
+            </g>
+            <g>
+                <path d="M500.281,443.719l-133.48-133.48C388.546,277.485,400,239.555,400,200C400,89.72,310.28,0,200,0S0,89.72,0,200    s89.72,200,200,200c39.556,0,77.486-11.455,110.239-33.198l36.895,36.895c0.005,0.005,0.01,0.01,0.016,0.016l96.568,96.568    C451.276,507.838,461.319,512,472,512c10.681,0,20.724-4.162,28.278-11.716C507.837,492.731,512,482.687,512,472    S507.837,451.269,500.281,443.719z M305.536,345.727c0,0.001-0.001,0.001-0.002,0.002C274.667,368.149,238.175,380,200,380    c-99.252,0-180-80.748-180-180S100.748,20,200,20s180,80.748,180,180c0,38.175-11.851,74.667-34.272,105.535    C334.511,320.988,320.989,334.511,305.536,345.727z M326.516,354.793c10.35-8.467,19.811-17.928,28.277-28.277l28.371,28.371    c-8.628,10.183-18.094,19.65-28.277,28.277L326.516,354.793z M486.139,486.139c-3.78,3.78-8.801,5.861-14.139,5.861    s-10.359-2.081-14.139-5.861l-88.795-88.795c10.127-8.691,19.587-18.15,28.277-28.277l88.798,88.798    C489.919,461.639,492,466.658,492,472C492,477.342,489.919,482.361,486.139,486.139z" fill="#ffffff" data-original="#000000" style=""/>
+            </g>
+            <g>
+                <path d="M200,40c-88.225,0-160,71.775-160,160s71.775,160,160,160s160-71.775,160-160S288.225,40,200,40z M200,340    c-77.196,0-140-62.804-140-140S122.804,60,200,60s140,62.804,140,140S277.196,340,200,340z" fill="#ffffff" data-original="#000000" style=""/>
+            </g>
+            <g>
+                <path d="M312.065,157.073c-8.611-22.412-23.604-41.574-43.36-55.413C248.479,87.49,224.721,80,200,80c-5.522,0-10,4.478-10,10    c0,5.522,4.478,10,10,10c41.099,0,78.631,25.818,93.396,64.247c1.528,3.976,5.317,6.416,9.337,6.416    c1.192,0,2.405-0.215,3.584-0.668C311.472,168.014,314.046,162.229,312.065,157.073z" fill="#ffffff" data-original="#000000" style=""/>
+            </g>
+        </symbol>
+    
+        <symbol id="call" viewbox="0 0 513.64 513.64">
+            <g>
+                <path d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72    c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68    c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44    l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z" fill="" data-original="#000000" style=""/>
+            </g>
+        </symbol>
+    
+        <symbol id="telegram" viewbox="0 0 24 24">
+            <g><path xmlns="http://www.w3.org/2000/svg" d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z" fill="" data-original="#000000" style="" class=""/></g>
+        </symbol>
+    
+        <symbol id="mail" viewbox="0 0 512 512">
+            <g>
+                <path d="M467,76H45C20.137,76,0,96.262,0,121v270c0,24.885,20.285,45,45,45h422c24.655,0,45-20.03,45-45V121    C512,96.306,491.943,76,467,76z M460.698,106c-9.194,9.145-167.415,166.533-172.878,171.967c-8.5,8.5-19.8,13.18-31.82,13.18    s-23.32-4.681-31.848-13.208C220.478,274.284,64.003,118.634,51.302,106H460.698z M30,384.894V127.125L159.638,256.08L30,384.894z     M51.321,406l129.587-128.763l22.059,21.943c14.166,14.166,33,21.967,53.033,21.967c20.033,0,38.867-7.801,53.005-21.939    l22.087-21.971L460.679,406H51.321z M482,384.894L352.362,256.08L482,127.125V384.894z" fill="" data-original="#000000" style=""/>
+            </g>
+        </symbol>   
+    
     </svg>
-    <header class="header">
+    <header class="header" id="header" data-scrollspy="#main">
         <div class="container">
             <div class="header__inner">
                 <nav class="nav" id="nav">
-                    <a href="" class="nav__link">home</a>
-                    <a href="" class="nav__link">about</a>
-                    <a href="" class="nav__link">pages</a>
-                    <a href="" class="nav__link">skills</a>
-                    <a href="" class="nav__link">gallery</a>
-                    <a href="" class="nav__link">contact</a>
+                    <a href="" class="nav__link" data-scroll="#main">home</a>
+                    <a href="" class="nav__link" data-scroll="#about">about</a>
+                    <a href="" class="nav__link" data-scroll="#skills">skills</a>
+                    <a href="" class="nav__link" data-scroll="#exp">experience</a>
+                    <a href="" class="nav__link" data-scroll="#portfolio">portfolio</a>
+                    <a href="" class="nav__link" data-scroll="#contact">contact</a>
                 </nav>
                 <!-- /#nav.nav -->
     
@@ -64,12 +95,12 @@
             <!-- /.header__inner -->
     
             <nav class="nav-transform" id="nav-transform">
-                <a href="" class="nav__link-transform">home</a>
-                <a href="" class="nav__link-transform">about</a>
-                <a href="" class="nav__link-transform">pages</a>
-                <a href="" class="nav__link-transform">skills</a>
-                <a href="" class="nav__link-transform">gallery</a>
-                <a href="" class="nav__link-transform">contact</a>
+                <a href="" class="nav__link-transform" data-scroll="#main">home</a>
+                <a href="" class="nav__link-transform" data-scroll="#about">about</a>
+                <a href="" class="nav__link-transform" data-scroll="#exp">experience</a>
+                <a href="" class="nav__link-transform" data-scroll="#skills">skills</a>
+                <a href="" class="nav__link-transform" data-scroll="#portfolio">portfolio</a>
+                <a href="" class="nav__link-transform" data-scroll="#contact">contact</a>
     
                 <div class="nav__social">
                     <a href="https://www.facebook.com/igor.kolotyuk.56" target="_blank" class="nav__social-block">
@@ -102,13 +133,13 @@
     </header>
     <!-- /.header -->
     
-    <main class="main">
+    <main class="main" id="main">
         <div class="container">
             <div class="main__content">
                 <span class="main__title">Hello i am</span>
                 <h1 class="main__name">Kolotyuk Ihor</h1>
                 <address>
-                    <a class="mail" href="mailto:info@companyweb.com">
+                    <a class="mail" href="mailto:kolotyuk@gmail.com">
                         kolotyuk@gmail.com</a> <br>
                     <a class="phone" href="tel:+380732613045">+380732613045</a>
                     <div class="main__social">
@@ -142,7 +173,7 @@
     </main>
     <!-- /.main -->
     
-    <div class="about p-150">
+    <div class="about p-150" id="about" data-scrollspy="#about">
         <div class="container">
             <div class="about__content">
                 <div class="about__img">
@@ -180,7 +211,7 @@
     </div>
     <!-- /.about -->
     
-    <div class="skills p-150">
+    <div class="skills p-150" id="skills" data-scrollspy="#skills">
         <div class="container">
             <div class="skills__content" id="skills__content">
                 <div class="skills__tech">
@@ -253,7 +284,7 @@
     </div>
     <!-- /.skills -->
     
-    <div class="exp p-150">
+    <div class="exp p-150" id="exp" data-scrollspy="#exp">
         <div class="container">
             <div class="exp__content">
                 <div class="exp__education">
@@ -285,11 +316,178 @@
     </div>
     <!-- /.exp -->
     
-    <div class="portfolio p-150">
+    <div class="portfolio p-150" id="portfolio" data-scrollspy="#portfolio">
         <div class="container">
             <div class="portfolio__content">
+                <h2 class="second__title">
+                    Portfolio
+                </h2>
+                <!-- /.second__title -->
                 <div class="portfolio__block">
-                    
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#1">
+                        <div class="grid__overlay">
+                            <div class="loupe">
+                                <svg class="nav__icon">
+                                    <use xlink:href="#loupe"></use>
+                                </svg>
+                            </div>
+                            <h3>Piroll</h3>
+                            <p>Website</p>
+                        </div>
+                        <img src="assets/img/piroll.jpg" alt="Piroll">
+                    </a>
+                    <!-- /.grid__block -->
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#2">
+                        <div class="grid__overlay">
+                            <div class="loupe">
+                                <svg class="nav__icon">
+                                    <use xlink:href="#loupe"></use>
+                                </svg>
+                            </div>
+                            <h3>Drive Moto Shop</h3>
+                            <p>WEBSITE</p>
+                        </div>
+                        <img src="assets/img/moto.jpg" alt="Shop">
+                    </a>
+                    <!-- /.grid__block -->
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#3">
+                        <div class="grid__overlay">
+                            <div class="loupe">
+                                <svg class="nav__icon">
+                                    <use xlink:href="#loupe"></use>
+                                </svg>
+                            </div>
+                            <h3>Limpon</h3>
+                            <p>website</p>
+                        </div>
+                        <img src="assets/img/limpon.jpg" alt="Limpon">
+                    </a>
+                    <!-- /.grid__block -->
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#4">
+                        <div class="grid__overlay">
+                            <div class="loupe">
+                                <svg class="nav__icon">
+                                    <use xlink:href="#loupe"></use>
+                                </svg>
+                            </div>
+                            <h3>Center Logistic</h3>
+                            <p>website</p>
+                        </div>
+                        <img src="assets/img/logistic.jpg" alt="logistic">
+                    </a>
+                    <!-- /.grid__block -->
+                </div>
+                <!-- /.portfolio__block -->
+    
+                <div class="portfolio__block mt-20">
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#5">
+                        <div class="grid__overlay">
+                            <div class="loupe">
+                                <svg class="nav__icon">
+                                    <use xlink:href="#loupe"></use>
+                                </svg>
+                            </div>
+                            <h3>Complex</h3>
+                            <p>WEBSITE</p>
+                        </div>
+                        <img src="assets/img/complex.jpg" alt="complex">
+                    </a>
+                    <!-- /.grid__block -->
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#6">
+                        <div class="grid__overlay">
+                            <div class="loupe">
+                                <svg class="nav__icon">
+                                    <use xlink:href="#loupe"></use>
+                                </svg>
+                            </div>
+                            <h3>Buhone</h3>
+                            <p>website</p>
+                        </div>
+                        <img src="assets/img/buhone.jpg" alt="buhone">
+                    </a>
+                    <!-- /.grid__block -->
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#7">
+                        <div class="grid__overlay">
+                            <div class="loupe">
+                                <svg class="nav__icon">
+                                    <use xlink:href="#loupe"></use>
+                                </svg>
+                            </div>
+                            <h3>Maker</h3>
+                            <p>website</p>
+                        </div>
+                        <img src="assets/img/maker.jpg" alt="maker">
+                    </a>
+                    <!-- /.grid__block -->
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#8">
+                        <div class="grid__overlay">
+                            <div class="loupe">
+                                <svg class="nav__icon">
+                                    <use xlink:href="#loupe"></use>
+                                </svg>
+                            </div>
+                            <h3>Oxxo</h3>
+                            <p>website</p>
+                        </div>
+                        <img src="assets/img/oxxo.jpg" alt="oxxo">
+                    </a>
+                    <!-- /.grid__block -->
+                </div>
+                <!-- /.portfolio__block -->
+    
+                <div class="portfolio__block mt-20">
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#9">
+                        <div class="grid__overlay">
+                            <div class="loupe">
+                                <svg class="nav__icon">
+                                    <use xlink:href="#loupe"></use>
+                                </svg>
+                            </div>
+                            <h3>Uber</h3>
+                            <p>website</p>
+                        </div>
+                        <img src="assets/img/uber.jpg" alt="uber">
+                    </a>
+                    <!-- /.grid__block -->
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#10">
+                        <div class="grid__overlay">
+                            <div class="loupe">
+                                <svg class="nav__icon">
+                                    <use xlink:href="#loupe"></use>
+                                </svg>
+                            </div>
+                            <h3>Trans Light</h3>
+                            <p>website</p>
+                        </div>
+                        <img src="assets/img/light.jpg" alt="light">
+                    </a>
+                    <!-- /.grid__block -->
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#11">
+                        <div class="grid__overlay">
+                            <div class="loupe">
+                                <svg class="nav__icon">
+                                    <use xlink:href="#loupe"></use>
+                                </svg>
+                            </div>
+                            <h3>Orise</h3>
+                            <p>website</p>
+                        </div>
+                        <img src="assets/img/orise.jpg" alt="orise">
+                    </a>
+                    <!-- /.grid__block -->
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#12">
+                        <div class="grid__overlay">
+                            <div class="loupe">
+                                <svg class="nav__icon">
+                                    <use xlink:href="#loupe"></use>
+                                </svg>
+                            </div>
+                            <h3>Tech Shop</h3>
+                            <p>website</p>
+                        </div>
+                        <img src="assets/img/tech.jpg" alt="tech">
+                    </a>
+                    <!-- /.grid__block -->
                 </div>
                 <!-- /.portfolio__block -->
             </div>
@@ -298,6 +496,556 @@
         <!-- /.container -->
     </div>
     <!-- /.portfolio -->
+    
+    <div class="contact p-150" id="contact" data-scrollspy="#contact">
+        <div class="container">
+            <h2 class="second__title">Contact Me</h2>
+            <div class="contact__blocks">
+                <div class="contact__block">
+                    <a href="tel:+380732613045" class="contact__block-circle">
+                        <svg class="contact__icon">
+                            <use xlink:href="#call"></use>
+                        </svg>
+                    </a>
+                    <!-- /.contact__block-circle -->
+                    <div class="contact__block-adress">
+                        <h3>Phone</h3>
+                        <a class="phone" href="tel:+380732613045">+380732613045</a>
+                    </div>
+                    <!-- /.contact__block-adress -->
+                </div>
+                <!-- /.contact__block -->
+    
+                <div class="contact__block">
+                    <a href="https://web.telegram.org/" class="contact__block-circle" target="_blank">
+                        <svg class="contact__icon">
+                            <use xlink:href="#telegram"></use>
+                        </svg>
+                    </a>
+                    <!-- /.contact__block-circle -->
+                    <div class="contact__block-adress">
+                        <h3>Telegram</h3>
+                        <a class="phone" href="tel:+380732613045">+380732613045</a>
+                    </div>
+                    <!-- /.contact__block-adress -->
+                </div>
+                <!-- /.contact__block -->
+    
+                <div class="contact__block">
+                    <a href="https://web.telegram.org/" class="contact__block-circle" target="_blank">
+                        <svg class="contact__icon">
+                            <use xlink:href="#mail"></use>
+                        </svg>
+                    </a>
+                    <!-- /.contact__block-circle -->
+                    <div class="contact__block-adress">
+                        <h3>Mail</h3>
+                        <a class="phone" href="mailto:kolotyuk@gmail.com">kolotyuk@gmail.com</a>
+                    </div>
+                    <!-- /.contact__block-adress -->
+                </div>
+                <!-- /.contact__block -->
+            </div>
+            <!-- /.contact__blocks -->
+    
+            <div class="contact__me">
+                <div class="contact__form">
+                    <form class="form" action="/" method="post">
+                        <div class="form__group-top">
+                            <div class="form__group">
+                                <input type="text" class="input input--user" placeholder="First Name">
+                            </div>
+                            <!-- /.form__group -->
+                            <div class="form__group">
+                                <input type="text" name="title" class="input input--text" placeholder="Last Name">
+                            </div>
+                            <!-- /.form__group -->
+                        </div>
+                        <!-- /.form__group-top -->
+                        <div class="form__group">
+                            <input type="email" class="input input--email" placeholder="Your E-mail">
+                        </div>
+                        <!-- /.form__group -->
+    
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    </form>
+                    <!-- /.form -->
+    
+                    <p>&copy;2021 made by ihor kolotyuk</p>
+                </div>
+                <!-- /.contact__form -->
+    
+                <div class="contact__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.492389898889!2d30.52108076569786!3d50.450555029475446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50f8b6e3c3%3A0xb528dc4d6dadc4f8!2z0JzQsNC50LTQsNC9INCd0LXQt9Cw0LLQuNGB0LjQvNC-0YHRgtC4LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1611357737205!5m2!1sru!2sua"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+                <!-- /.contact__map -->
+            </div>
+            <!-- /.contact__me -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.contact -->
+    
+    
+    
+    <div class="modals">
+        <div class="modal" id="1">
+            <div class="modal__inner">
+                <div class="portfolio__inner">
+                    <div class="portfolio__inner-img">
+                        <a href="https://kolotyuk.github.io/Piroll/" target="_blank">
+                            <img src="assets/img/piroll.jpg" alt="Shop">
+                        </a>
+                    </div>
+                    <!-- /.portfolio__inner-img -->
+                    <div class="portfolio__inner-about">
+                        <h4>Siteblaldwlda</h4>
+                        <span>Link:</span>
+                        <a href="https://kolotyuk.github.io/Piroll/" target="_blank">https://kolotyuk.github.io/Piroll/</a>
+                        <br>
+                        <span>Code:</span>
+                        <a href="https://github.com/kolotyuk/Piroll" target="_blank">https://github.com/kolotyuk/Piroll</a>
+                        <h5>Technologies:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Responsive, Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    <!-- /.portfolio__inner-about -->
+                </div>
+                <!-- /.portfolio__inner -->
+    
+                <button class="modal__close" type="button" data-modal-close="">
+                    <img src="assets/img/modal-close.svg" alt="Close">
+                </button>
+                <!-- /.modal__close -->
+            </div>
+        </div>
+        <!-- /.modal -->
+    
+        <div class="modal" id="2">
+            <div class="modal__inner">
+                <div class="portfolio__inner">
+                    <div class="portfolio__inner-img">
+                        <a href="https://kolotyuk.github.io/driveMotoShop/" target="_blank">
+                            <img src="assets/img/moto.jpg" alt="Shop">
+                        </a>
+                    </div>
+                    <!-- /.portfolio__inner-img -->
+                    <div class="portfolio__inner-about">
+                        <h4>Siteblaldwlda</h4>
+                        <span>Link:</span>
+                        <a href="https://kolotyuk.github.io/driveMotoShop/"
+                            target="_blank">https://kolotyuk.github.io/driveMotoShop/</a>
+                        <br>
+                        <span>Code:</span>
+                        <a href="https://github.com/kolotyuk/driveMotoShop"
+                            target="_blank">https://github.com/kolotyuk/driveMotoShop</a>
+                        <h5>Technologies:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Responsive, Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    <!-- /.portfolio__inner-about -->
+                </div>
+                <!-- /.portfolio__inner -->
+    
+                <button class="modal__close" type="button" data-modal-close="">
+                    <img src="assets/img/modal-close.svg" alt="Close">
+                </button>
+                <!-- /.modal__close -->
+            </div>
+        </div>
+        <!-- /.modal -->
+    
+        <div class="modal" id="3">
+            <div class="modal__inner">
+                <div class="portfolio__inner">
+                    <div class="portfolio__inner-img">
+                        <a href="https://kolotyuk.github.io/limpon/" target="_blank">
+                            <img src="assets/img/limpon.jpg" alt="Limpon">
+                        </a>
+                    </div>
+                    <!-- /.portfolio__inner-img -->
+                    <div class="portfolio__inner-about">
+                        <h4>Siteblaldwlda</h4>
+                        <span>Link:</span>
+                        <a href="https://kolotyuk.github.io/limpon/" target="_blank">https://kolotyuk.github.io/limpon/</a>
+                        <br>
+                        <span>Code:</span>
+                        <a href="https://github.com/kolotyuk/limpon" target="_blank">https://github.com/kolotyuk/limpon</a>
+                        <h5>Technologies:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Responsive, Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    <!-- /.portfolio__inner-about -->
+                </div>
+                <!-- /.portfolio__inner -->
+    
+                <button class="modal__close" type="button" data-modal-close="">
+                    <img src="assets/img/modal-close.svg" alt="Close">
+                </button>
+                <!-- /.modal__close -->
+            </div>
+        </div>
+        <!-- /.modal -->
+    
+        <div class="modal" id="4">
+            <div class="modal__inner">
+                <div class="portfolio__inner">
+                    <div class="portfolio__inner-img">
+                        <a href="https://kolotyuk.github.io/centerLogistic/" target="_blank">
+                            <img src="assets/img/logistic.jpg" alt="logistic">
+                        </a>
+                    </div>
+                    <!-- /.portfolio__inner-img -->
+                    <div class="portfolio__inner-about">
+                        <h4>Siteblaldwlda</h4>
+                        <span>Link:</span>
+                        <a href="https://kolotyuk.github.io/centerLogistic/"
+                            target="_blank">https://kolotyuk.github.io/centerLogistic/</a>
+                        <br>
+                        <span>Code:</span>
+                        <a href="https://github.com/kolotyuk/centerLogistic"
+                            target="_blank">https://github.com/kolotyuk/centerLogistic</a>
+                        <h5>Technologies:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Responsive, Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    <!-- /.portfolio__inner-about -->
+                </div>
+                <!-- /.portfolio__inner -->
+    
+                <button class="modal__close" type="button" data-modal-close="">
+                    <img src="assets/img/modal-close.svg" alt="Close">
+                </button>
+                <!-- /.modal__close -->
+            </div>
+        </div>
+        <!-- /.modal -->
+    
+        <div class="modal" id="5">
+            <div class="modal__inner">
+                <div class="portfolio__inner">
+                    <div class="portfolio__inner-img">
+                        <a href="https://kolotyuk.github.io/complex/" target="_blank">
+                            <img src="assets/img/complex.jpg" alt="complex">
+                        </a>
+                    </div>
+                    <!-- /.portfolio__inner-img -->
+                    <div class="portfolio__inner-about">
+                        <h4>Siteblaldwlda</h4>
+                        <span>Link:</span>
+                        <a href="https://kolotyuk.github.io/complex/"
+                            target="_blank">https://kolotyuk.github.io/complex/</a>
+                        <br>
+                        <span>Code:</span>
+                        <a href="https://github.com/kolotyuk/complex"
+                            target="_blank">https://github.com/kolotyuk/complex</a>
+                        <h5>Technologies:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Responsive, Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    <!-- /.portfolio__inner-about -->
+                </div>
+                <!-- /.portfolio__inner -->
+    
+                <button class="modal__close" type="button" data-modal-close="">
+                    <img src="assets/img/modal-close.svg" alt="Close">
+                </button>
+                <!-- /.modal__close -->
+            </div>
+        </div>
+        <!-- /.modal -->
+    
+    
+        <div class="modal" id="6">
+            <div class="modal__inner">
+                <div class="portfolio__inner">
+                    <div class="portfolio__inner-img">
+                        <a href="https://kolotyuk.github.io/Buhone/" target="_blank">
+                            <img src="assets/img/buhone.jpg" alt="buhone">
+                        </a>
+                    </div>
+                    <!-- /.portfolio__inner-img -->
+                    <div class="portfolio__inner-about">
+                        <h4>Siteblaldwlda</h4>
+                        <span>Link:</span>
+                        <a href="https://kolotyuk.github.io/Buhone/" target="_blank">https://kolotyuk.github.io/Buhone/</a>
+                        <br>
+                        <span>Code:</span>
+                        <a href="https://github.com/kolotyuk/Buhone" target="_blank">https://github.com/kolotyuk/Buhone</a>
+                        <h5>Technologies:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Responsive, Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    <!-- /.portfolio__inner-about -->
+                </div>
+                <!-- /.portfolio__inner -->
+    
+                <button class="modal__close" type="button" data-modal-close="">
+                    <img src="assets/img/modal-close.svg" alt="Close">
+                </button>
+                <!-- /.modal__close -->
+            </div>
+        </div>
+        <!-- /.modal -->
+    
+    
+        <div class="modal" id="7">
+            <div class="modal__inner">
+                <div class="portfolio__inner">
+                    <div class="portfolio__inner-img">
+                        <a href="https://kolotyuk.github.io/makerSite/" target="_blank">
+                            <img src="assets/img/maker.jpg" alt="maker">
+                        </a>
+                    </div>
+                    <!-- /.portfolio__inner-img -->
+                    <div class="portfolio__inner-about">
+                        <h4>Siteblaldwlda</h4>
+                        <span>Link:</span>
+                        <a href="https://kolotyuk.github.io/makerSite/"
+                            target="_blank">https://kolotyuk.github.io/makerSite/</a>
+                        <br>
+                        <span>Code:</span>
+                        <a href="https://github.com/kolotyuk/makerSite"
+                            target="_blank">https://github.com/kolotyuk/makerSite</a>
+                        <h5>Technologies:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Responsive, Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    <!-- /.portfolio__inner-about -->
+                </div>
+                <!-- /.portfolio__inner -->
+    
+                <button class="modal__close" type="button" data-modal-close="">
+                    <img src="assets/img/modal-close.svg" alt="Close">
+                </button>
+                <!-- /.modal__close -->
+            </div>
+        </div>
+        <!-- /.modal -->
+    
+    
+        <div class="modal" id="8">
+            <div class="modal__inner">
+                <div class="portfolio__inner">
+                    <div class="portfolio__inner-img">
+                        <a href="https://kolotyuk.github.io/Oxxo/" target="_blank">
+                            <img src="assets/img/oxxo.jpg" alt="oxxo">
+                        </a>
+                    </div>
+                    <!-- /.portfolio__inner-img -->
+                    <div class="portfolio__inner-about">
+                        <h4>Siteblaldwlda</h4>
+                        <span>Link:</span>
+                        <a href="https://kolotyuk.github.io/Oxxo/" target="_blank">https://kolotyuk.github.io/Oxxo/</a>
+                        <br>
+                        <span>Code:</span>
+                        <a href="https://github.com/kolotyuk/Oxxo" target="_blank">https://github.com/kolotyuk/Oxxo</a>
+                        <h5>Technologies:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Responsive, Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    <!-- /.portfolio__inner-about -->
+                </div>
+                <!-- /.portfolio__inner -->
+    
+                <button class="modal__close" type="button" data-modal-close="">
+                    <img src="assets/img/modal-close.svg" alt="Close">
+                </button>
+                <!-- /.modal__close -->
+            </div>
+        </div>
+        <!-- /.modal -->
+    
+    
+        <div class="modal" id="9">
+            <div class="modal__inner">
+                <div class="portfolio__inner">
+                    <div class="portfolio__inner-img">
+                        <a href="https://kolotyuk.github.io/uber/" target="_blank">
+                            <img src="assets/img/uber.jpg" alt="uber">
+                        </a>
+                    </div>
+                    <!-- /.portfolio__inner-img -->
+                    <div class="portfolio__inner-about">
+                        <h4>Siteblaldwlda</h4>
+                        <span>Link:</span>
+                        <a href="https://kolotyuk.github.io/uber/" target="_blank">https://kolotyuk.github.io/uber/</a>
+                        <br>
+                        <span>Code:</span>
+                        <a href="https://github.com/kolotyuk/uber" target="_blank">https://github.com/kolotyuk/uber</a>
+                        <h5>Technologies:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Responsive, Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    <!-- /.portfolio__inner-about -->
+                </div>
+                <!-- /.portfolio__inner -->
+    
+                <button class="modal__close" type="button" data-modal-close="">
+                    <img src="assets/img/modal-close.svg" alt="Close">
+                </button>
+                <!-- /.modal__close -->
+            </div>
+        </div>
+        <!-- /.modal -->
+    
+    
+        <div class="modal" id="10">
+            <div class="modal__inner">
+                <div class="portfolio__inner">
+                    <div class="portfolio__inner-img">
+                        <a href="https://kolotyuk.github.io/transLight/" target="_blank">
+                            <img src="assets/img/light.jpg" alt="light">
+                        </a>
+                    </div>
+                    <!-- /.portfolio__inner-img -->
+                    <div class="portfolio__inner-about">
+                        <h4>Siteblaldwlda</h4>
+                        <span>Link:</span>
+                        <a href="https://kolotyuk.github.io/transLight/"
+                            target="_blank">https://kolotyuk.github.io/transLight/</a>
+                        <br>
+                        <span>Code:</span>
+                        <a href="https://github.com/kolotyuk/transLight"
+                            target="_blank">https://github.com/kolotyuk/transLight</a>
+                        <h5>Technologies:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Responsive, Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    <!-- /.portfolio__inner-about -->
+                </div>
+                <!-- /.portfolio__inner -->
+    
+                <button class="modal__close" type="button" data-modal-close="">
+                    <img src="assets/img/modal-close.svg" alt="Close">
+                </button>
+                <!-- /.modal__close -->
+            </div>
+        </div>
+        <!-- /.modal -->
+    
+    
+        <div class="modal" id="11">
+            <div class="modal__inner">
+                <div class="portfolio__inner">
+                    <div class="portfolio__inner-img">
+                        <a href="https://kolotyuk.github.io/OriseStore/" target="_blank">
+                            <img src="assets/img/orise.jpg" alt="orise">
+                        </a>
+                    </div>
+                    <!-- /.portfolio__inner-img -->
+                    <div class="portfolio__inner-about">
+                        <h4>Siteblaldwlda</h4>
+                        <span>Link:</span>
+                        <a href="https://kolotyuk.github.io/OriseStore/"
+                            target="_blank">https://kolotyuk.github.io/OriseStore/</a>
+                        <br>
+                        <span>Code:</span>
+                        <a href="https://github.com/kolotyuk/OriseStore"
+                            target="_blank">https://github.com/kolotyuk/OriseStore</a>
+                        <h5>Technologies:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Responsive, Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    <!-- /.portfolio__inner-about -->
+                </div>
+                <!-- /.portfolio__inner -->
+    
+                <button class="modal__close" type="button" data-modal-close="">
+                    <img src="assets/img/modal-close.svg" alt="Close">
+                </button>
+                <!-- /.modal__close -->
+            </div>
+        </div>
+        <!-- /.modal -->
+    
+    
+        <div class="modal" id="12">
+            <div class="modal__inner">
+                <div class="portfolio__inner">
+                    <div class="portfolio__inner-img">
+                        <a href="https://kolotyuk.github.io/TechShop/" target="_blank">
+                            <img src="assets/img/tech.jpg" alt="tech">
+                        </a>
+                    </div>
+                    <!-- /.portfolio__inner-img -->
+                    <div class="portfolio__inner-about">
+                        <h4>Siteblaldwlda</h4>
+                        <span>Link:</span>
+                        <a href="https://kolotyuk.github.io/TechShop/"
+                            target="_blank">https://kolotyuk.github.io/TechShop/</a>
+                        <br>
+                        <span>Code:</span>
+                        <a href="https://github.com/kolotyuk/TechShop"
+                            target="_blank">https://github.com/kolotyuk/TechShop</a>
+                        <h5>Technologies:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>Responsive, Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    <!-- /.portfolio__inner-about -->
+                </div>
+                <!-- /.portfolio__inner -->
+    
+                <button class="modal__close" type="button" data-modal-close="">
+                    <img src="assets/img/modal-close.svg" alt="Close">
+                </button>
+                <!-- /.modal__close -->
+            </div>
+        </div>
+        <!-- /.modal -->
+    </div>
+    <!-- /.modals -->
 
 </body>
 </html>
