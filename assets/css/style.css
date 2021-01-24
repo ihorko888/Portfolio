@@ -2160,6 +2160,10 @@ address .nav__icon:hover {
         width: 48%;
         margin-bottom: 40px;
     }
+
+    .modal.show {
+        overflow-y: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2247,6 +2251,19 @@ address .nav__icon:hover {
         order: -1;
         margin-bottom: 50px;
     }
+
+    .portfolio__inner {
+        width: 70%;
+    }
+
+    .modal__close {
+        right: 30px;
+    }
+
+    .portfolio__inner-img img {
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
 }
 
 @media (max-width: 576px) {
@@ -2257,5 +2274,25 @@ address .nav__icon:hover {
 
     .grid__block {
         width: 100%;
+    }
+
+    .portfolio__inner {
+        padding-bottom: 0;
+    }
+
+    .portfolio__inner-about h4 {
+        margin-bottom: 0;
+    }
+
+    .portfolio__inner-about ul {
+        margin: 0;
+    }
+
+    .portfolio__inner-about a {
+        margin-left: 0;
+    }
+
+    .portfolio__inner-about h5 {
+        margin-top: 0;
     }
 }
