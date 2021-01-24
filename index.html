@@ -72,7 +72,7 @@
         </symbol>   
     
     </svg>
-    <header class="header" id="header" data-scrollspy="#main">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <nav class="nav" id="nav">
@@ -133,9 +133,10 @@
     </header>
     <!-- /.header -->
     
-    <main class="main" id="main">
+    <main class="main" id="main" data-scrollspy="#main">
         <div class="container">
-            <div class="main__content">
+            <div class="main__content" data-aos="fade-up"
+            data-aos-duration="1000">
                 <span class="main__title">Hello i am</span>
                 <h1 class="main__name">Kolotyuk Ihor</h1>
                 <address>
@@ -168,6 +169,12 @@
                 </address>
             </div>
             <!-- /.main__content -->
+    
+            <div class="main__photo" data-aos="fade-up"
+            data-aos-duration="1000">
+                <!-- <img src="assets/img/me.jpg" alt=""> -->
+            </div>
+            <!-- /.main__photo -->
         </div>
         <!-- /.container -->
     </main>
@@ -176,14 +183,14 @@
     <div class="about p-150" id="about" data-scrollspy="#about">
         <div class="container">
             <div class="about__content">
-                <div class="about__img">
+                <div class="about__img" data-aos="fade-right">
                     <img src="assets/img/about.png" alt="About">
                 </div>
                 <!-- /.about__img -->
     
-                <div class="about__me">
+                <div class="about__me" data-aos="fade-left">
                     <h2 class="second__title">About me</h2>
-                    <p>I am results-oriented web developer. I make it my goal to create web sites with the user in mind,
+                    <p>My name is Ihor, i am 28 years old. I am results-oriented web developer. I make it my goal to create web sites with the user in mind,
                         creating web-applications with a useable and intuitive user interface experience. I also understand
                         the importance of creating highly readable and easily maintainable source code. I am constantly
                         striving to learn new technologies and look to ways to better myself in this rapidly changing
@@ -214,7 +221,7 @@
     <div class="skills p-150" id="skills" data-scrollspy="#skills">
         <div class="container">
             <div class="skills__content" id="skills__content">
-                <div class="skills__tech">
+                <div class="skills__tech" data-aos="fade-up">
                     <h2 class="skills__title second__title">Technical Skills</h2>
                     <span>HTML 90%</span>
                     <div class="skillbar-container clearfix" data-percent="90%">
@@ -244,7 +251,7 @@
                 </div>
                 <!-- /.skills__tech -->
     
-                <div class="skills__prof">
+                <div class="skills__prof" data-aos="fade-up" data-aos-delay="200">
                     <h2 class="skills__title second__title">Professional Skills</h2>
                     <div class="skills__progress">
                         <div class="progressbar" data-animate="false">
@@ -287,7 +294,7 @@
     <div class="exp p-150" id="exp" data-scrollspy="#exp">
         <div class="container">
             <div class="exp__content">
-                <div class="exp__education">
+                <div class="exp__education" data-aos="fade-down-right">
                     <h2 class="second__title">Education</h2>
                     <div class="exp__content-block">
                         <p>KPEK LNTU <span>Kovel Economic College (Manager) 2007 - 2011</span></p>
@@ -299,7 +306,7 @@
                 </div>
                 <!-- /.exp__education -->
     
-                <div class="exp__work">
+                <div class="exp__work" data-aos="fade-up-left" data-aos-delay="200">
                     <h2 class="second__title">Work</h2>
                     <div class="exp__content-block">
                         <p>Merchandiser Kovel <span> 2014 - 2015</span></p>
@@ -324,7 +331,7 @@
                 </h2>
                 <!-- /.second__title -->
                 <div class="portfolio__block">
-                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#1">
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#1" data-aos="fade-up">
                         <div class="grid__overlay">
                             <div class="loupe">
                                 <svg class="nav__icon">
@@ -337,7 +344,7 @@
                         <img src="assets/img/piroll.jpg" alt="Piroll">
                     </a>
                     <!-- /.grid__block -->
-                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#2">
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#2" data-aos="fade-up" data-aos-delay="150">
                         <div class="grid__overlay">
                             <div class="loupe">
                                 <svg class="nav__icon">
@@ -350,7 +357,7 @@
                         <img src="assets/img/moto.jpg" alt="Shop">
                     </a>
                     <!-- /.grid__block -->
-                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#3">
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#3" data-aos="fade-up" data-aos-delay="300">
                         <div class="grid__overlay">
                             <div class="loupe">
                                 <svg class="nav__icon">
@@ -363,7 +370,7 @@
                         <img src="assets/img/limpon.jpg" alt="Limpon">
                     </a>
                     <!-- /.grid__block -->
-                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#4">
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#4" data-aos="fade-up" data-aos-delay="450">
                         <div class="grid__overlay">
                             <div class="loupe">
                                 <svg class="nav__icon">
@@ -380,7 +387,7 @@
                 <!-- /.portfolio__block -->
     
                 <div class="portfolio__block mt-20">
-                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#5">
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#5" data-aos="fade-up">
                         <div class="grid__overlay">
                             <div class="loupe">
                                 <svg class="nav__icon">
@@ -393,7 +400,7 @@
                         <img src="assets/img/complex.jpg" alt="complex">
                     </a>
                     <!-- /.grid__block -->
-                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#6">
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#6" data-aos="fade-up" data-aos-delay="150">
                         <div class="grid__overlay">
                             <div class="loupe">
                                 <svg class="nav__icon">
@@ -406,7 +413,7 @@
                         <img src="assets/img/buhone.jpg" alt="buhone">
                     </a>
                     <!-- /.grid__block -->
-                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#7">
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#7" data-aos="fade-up" data-aos-delay="300">
                         <div class="grid__overlay">
                             <div class="loupe">
                                 <svg class="nav__icon">
@@ -419,7 +426,7 @@
                         <img src="assets/img/maker.jpg" alt="maker">
                     </a>
                     <!-- /.grid__block -->
-                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#8">
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#8" data-aos="fade-up" data-aos-delay="450">
                         <div class="grid__overlay">
                             <div class="loupe">
                                 <svg class="nav__icon">
@@ -436,7 +443,7 @@
                 <!-- /.portfolio__block -->
     
                 <div class="portfolio__block mt-20">
-                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#9">
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#9" data-aos="fade-up">
                         <div class="grid__overlay">
                             <div class="loupe">
                                 <svg class="nav__icon">
@@ -449,7 +456,7 @@
                         <img src="assets/img/uber.jpg" alt="uber">
                     </a>
                     <!-- /.grid__block -->
-                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#10">
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#10" data-aos="fade-up" data-aos-delay="150">
                         <div class="grid__overlay">
                             <div class="loupe">
                                 <svg class="nav__icon">
@@ -462,7 +469,7 @@
                         <img src="assets/img/light.jpg" alt="light">
                     </a>
                     <!-- /.grid__block -->
-                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#11">
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#11" data-aos="fade-up" data-aos-delay="300">
                         <div class="grid__overlay">
                             <div class="loupe">
                                 <svg class="nav__icon">
@@ -475,7 +482,7 @@
                         <img src="assets/img/orise.jpg" alt="orise">
                     </a>
                     <!-- /.grid__block -->
-                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#12">
+                    <a href="#" class="grid__block grid__block-large grid__block1" data-modal="#12" data-aos="fade-up" data-aos-delay="450">
                         <div class="grid__overlay">
                             <div class="loupe">
                                 <svg class="nav__icon">
@@ -501,7 +508,7 @@
         <div class="container">
             <h2 class="second__title">Contact Me</h2>
             <div class="contact__blocks">
-                <div class="contact__block">
+                <div class="contact__block" data-aos="fade-right">
                     <a href="tel:+380732613045" class="contact__block-circle">
                         <svg class="contact__icon">
                             <use xlink:href="#call"></use>
@@ -516,7 +523,7 @@
                 </div>
                 <!-- /.contact__block -->
     
-                <div class="contact__block">
+                <div class="contact__block" data-aos="fade-down" data-aos-delay="150">
                     <a href="https://web.telegram.org/" class="contact__block-circle" target="_blank">
                         <svg class="contact__icon">
                             <use xlink:href="#telegram"></use>
@@ -531,7 +538,7 @@
                 </div>
                 <!-- /.contact__block -->
     
-                <div class="contact__block">
+                <div class="contact__block" data-aos="fade-left" data-aos-delay="300">
                     <a href="https://web.telegram.org/" class="contact__block-circle" target="_blank">
                         <svg class="contact__icon">
                             <use xlink:href="#mail"></use>
@@ -578,7 +585,7 @@
                 <div class="contact__map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.492389898889!2d30.52108076569786!3d50.450555029475446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50f8b6e3c3%3A0xb528dc4d6dadc4f8!2z0JzQsNC50LTQsNC9INCd0LXQt9Cw0LLQuNGB0LjQvNC-0YHRgtC4LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1611357737205!5m2!1sru!2sua"
-                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
                 </div>
                 <!-- /.contact__map -->
