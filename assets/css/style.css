@@ -2152,6 +2152,10 @@ address .nav__icon:hover {
         margin-top: 0;
     }
 
+    .main {
+        height: 100%;
+    }
+
     .portfolio__block {
         height: 100%;
     }
@@ -2180,7 +2184,6 @@ address .nav__icon:hover {
     }
 
     .main {
-        height: 100%;
         padding-bottom: 100px;
     }
 
